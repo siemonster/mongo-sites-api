@@ -29,6 +29,7 @@ var port = process.env.PORT || 8079;
 
 var url = require('url');
 
+app.use(helmet());
 app.use(busboy());
 app.use(cookieParser());
 
