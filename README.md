@@ -27,7 +27,7 @@ For an advanced configuration proceed with this wiki ... .
 
 ## Get and write data examples
 
-#### Get data
+### Get data
 ```
 mongoSitesApi.mgoInterface.find({_type: 'Fruit'})
 ```
