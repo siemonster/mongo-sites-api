@@ -6,6 +6,7 @@ ENV PRODUCTION=1
 RUN apt-get update
 RUN apt-get install -y --force-yes nodejs nodejs-legacy npm mongodb
 RUN npm install -g gulp
+RUN npm install helmet --save
 
 RUN mkdir -p /root/mongo-sites-api
 COPY package.json /root/mongo-sites-api/package.json
