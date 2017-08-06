@@ -21,6 +21,7 @@ Core.registerRequestPoint('MSAServer_Init', {type: 'multi'});
 const utils       = require("./Utils.js");
 
 var express = require('express');
+var helmet = require('helmet');
 var busboy = require('connect-busboy');
 var cookieParser = require('cookie-parser');
 var app = express();
