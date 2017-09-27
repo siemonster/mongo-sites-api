@@ -46,7 +46,7 @@
     "promt": "0.0.0",
     "request": "^2.74.0",
     "socket.io": "^2.0.2",
-    "snyk": "^1.38.1"
+    "snyk": "^1.41.1"
   },
   "devDependencies": {},
   "license": "BSD-2-Clause",
