@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.8.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -18,6 +18,8 @@ patch:
   'npm:ms:20170412':
     - socket.io > socket.io-adapter > socket.io-parser > debug > ms:
         patched: '2017-08-06T06:49:20.607Z'
+    - gulp-ng-annotate > bufferstreams > debug > ms:
+        patched: '2017-12-06T03:00:20.392Z'
   'npm:qs:20140806-1':
     - gulp-base64 > request > qs:
         patched: '2017-08-06T06:49:20.607Z'
@@ -30,3 +32,6 @@ patch:
   'npm:qs:20140806':
     - gulp-base64 > request > qs:
         patched: '2017-08-06T21:49:11.747Z'
+  'npm:debug:20170905':
+    - gulp-ng-annotate > bufferstreams > debug:
+        patched: '2017-12-06T03:00:20.392Z'
