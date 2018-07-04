@@ -8,7 +8,8 @@
     "startdb": "mkdir -p ./tmp/data; mongod --smallfiles --dbpath=./tmp/data",
     "test": "bash -c 'MOCHA_COLORS=true ./node_modules/.bin/mocha -b --timeout=5000 --full-trace */_tests/*.functional.*test.js */_tests/*.configurable.*test.js */_tests/*.secure.*test.js */_tests/*.foolproof.*test.js | node tests_add_stack.js; test \"${PIPESTATUS[0]}\" -eq \"0\" && node tests_check.js'",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "add-stream": "1.0.0",
@@ -46,7 +47,7 @@
     "promt": "0.0.0",
     "request": "^2.74.0",
     "socket.io": "^2.0.2",
-    "snyk": "^1.38.1"
+    "snyk": "^1.88.1"
   },
   "devDependencies": {},
   "license": "BSD-2-Clause",
